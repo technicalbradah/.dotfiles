@@ -47,6 +47,40 @@ set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 
 
+""" Enable Vundle NOTE Move below Mappings to accept default mappings for below plugins """
+
+filetype off " Pathogen needs to run before plugin indent on
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+""" Enable the following plugins """
+
+Plugin 'rking/ag'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'kien/ctrlp'
+Plugin 'matchit.zip'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ervandew/supertab'
+Plugin 'godlygeek/tabular'
+Plugin 'tomtom/tlib_vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'bling/vim-airline'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'tpope/vim-fugitive'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
+Plugin 'tpope/vim-sensible'
+Plugin 'xolox/vim-shell'
+Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-surround'
+
+""" End of Plugins list """
+
+call vundle#end()
+
+
 """ Leader Mappings [ALL]    """
 
 map <silent> <leader>h :set hlsearch!<CR>     " Enable/Disable highlighted matches
@@ -86,14 +120,6 @@ nmap <leader>wq ;wq<CR>                       " Save and Quit
 
 nmap <C-K> O<Esc>                             " Insert Newline above current line
 nmap <C-J> o<Esc>                             " Insert Newline below current line
-
-
-
-""" Enable Pathogen """
-
-filetype off " Pathogen needs to run before plugin indent on
-call pathogen#infect('bundle/{}')
-call pathogen#helptags()  " generate helptags for everything in 'runtimepath'
 
 
 """ Enable correct syntax highlighting """
