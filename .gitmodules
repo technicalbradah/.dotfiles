@@ -1,0 +1,4 @@
+[submodule ".vim/bundle/matchit.zip"]
+    path = .vim/bundle/matchit.zip
+    url = https://github.com/vim-scripts/matchit.zip
+    ignore = untracked
