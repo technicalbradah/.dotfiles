@@ -76,6 +76,8 @@ Plugin 'tpope/vim-sensible'
 Plugin 'xolox/vim-shell'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
+
 
 """ End of Plugins list """
 
