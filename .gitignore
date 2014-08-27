@@ -1,2 +1,5 @@
 .vim/bundle/*/doc
 .vim/bundle/matchit.zip
+.vim/eclim/
+.vim/plugin/eclim.vim
+
