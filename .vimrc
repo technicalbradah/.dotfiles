@@ -55,9 +55,9 @@ call vundle#begin()
 
 """ Enable the following plugins """
 
-Plugin 'rking/ag'
+Plugin 'rking/ag.vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'kien/ctrlp'
+Plugin 'kien/ctrlp.vim'
 Plugin 'matchit.zip'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
