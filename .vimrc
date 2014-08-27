@@ -60,6 +60,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'matchit.zip'
 Plugin 'scrooloose/nerdtree'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'ervandew/supertab'
 Plugin 'godlygeek/tabular'
 Plugin 'tomtom/tlib_vim'
