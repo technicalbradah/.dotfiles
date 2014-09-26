@@ -5,6 +5,7 @@ let mapleader=","
 
 " Map jk to the Esc key
 inoremap jk <Esc>
+vnoremap jk <Esc>
 
 " Remap ; to :
 nnoremap ; :
