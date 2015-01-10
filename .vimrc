@@ -5,7 +5,9 @@ let mapleader=","
 
 " Map jk to the Esc key
 inoremap jk <Esc>
-vnoremap jk <Esc>
+" This screws up deleting with x when selecting in visual mode
+"vnoremap jk <Esc>
+vnoremap vv <Esc>
 
 " Remap ; to :
 nnoremap ; :
