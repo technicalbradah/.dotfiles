@@ -2,4 +2,6 @@
 let g:ctrlp_map = '<c-p>'
 
 " Ignore these directories
-set wildignore+=*/build/**
+" */build/** is a bad idea because it won't let me have a directory named
+" ../build..
+"set wildignore+=*/build/**
