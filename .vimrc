@@ -108,7 +108,7 @@ nmap <leader>ev :e ~/.vimrc<CR>
 "nmap <leader>l :set list!<CR>" SEE BELOW
 nmap <leader>n :set number!<CR>" Show/Hide line numbers
 nmap <Leader>p $p" Paste the " buffer to the end of the line
-nmap <Leader>P $<Space>p" Paste the " buffer to the end of the line with a space
+nmap <Leader>P $a<Space><ESC>p" Paste the " buffer to the end of the line with a space
 nmap <leader>Q ;q!<CR>" Quit without saving
 nmap <leader>q ;q<CR>" Quit
 nmap <silent> <leader>s :set spell!<CR>" Enable/Disable spell checking
