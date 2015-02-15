@@ -89,32 +89,32 @@ call vundle#end()
 
 """ Leader Mappings [ALL]    """
 
-map <silent> <leader>h :set hlsearch!<CR>     " Enable/Disable highlighted matches
+map <silent> <leader>h :set hlsearch!<CR>" Enable/Disable highlighted matches
 
 """ Leader Mappings [INSERT] """
 
-"imap <leader>l <ESC>:set list!<CR>i          " SEE BELOW
-imap <leader>n <ESC>:set number!<CR>i         " Show/Hide line numbers
-imap <leader>Q <ESC>;q!<CR>                   " Quit without saving
-imap <leader>q <ESC>;q<CR>                    " Quit
-imap <leader>w <ESC>;w<CR>                    " Save the document
-imap <leader>wq <ESC>;wq<CR>                  " Save and Quit
+"imap <leader>l <ESC>:set list!<CR>" SEE BELOW
+imap <leader>n <ESC>:set number!<CR>" Show/Hide line numbers
+imap <leader>Q <ESC>;q!<CR>" Quit without saving
+imap <leader>q <ESC>;q<CR>" Quit
+imap <leader>w <ESC>;w<CR>" Save the document
+imap <leader>wq <ESC>;wq<CR>" Save and Quit
 
 """ Leader Mappings [NORMAL] """
 
 "nmap <leader>d :NERDTreeToggle<CR>
-"nmap <leader>l :set list!<CR>                " SEE BELOW
-nmap <leader>n :set number!<CR>               " Show/Hide line numbers
-nmap <Leader>p $p                             " Paste the " buffer to the end of the line
-nmap <Leader>P $<Space>p                      " Paste the " buffer to the end of the line with a space
-nmap <leader>Q ;q!<CR>                        " Quit without saving
-nmap <leader>q ;q<CR>                         " Quit
-nmap <silent> <leader>s :set spell!<CR>       " Enable/Disable spell checking
+"nmap <leader>l :set list!<CR>" SEE BELOW
+nmap <leader>n :set number!<CR>" Show/Hide line numbers
+nmap <Leader>p $p" Paste the " buffer to the end of the line
+nmap <Leader>P $<Space>p" Paste the " buffer to the end of the line with a space
+nmap <leader>Q ;q!<CR>" Quit without saving
+nmap <leader>q ;q<CR>" Quit
+nmap <silent> <leader>s :set spell!<CR>" Enable/Disable spell checking
 "nmap <leader>t: :Tabularize /:\zs<CR>
 "nmap <leader>t= :Tabularize /=<CR>
 "nmap <leader>t> :Tabularize /=><CR>
-nmap <leader>w ;w<CR>                         " Save the document
-nmap <leader>wq ;wq<CR>                       " Save and Quit
+nmap <leader>w ;w<CR>" Save the document
+nmap <leader>wq ;wq<CR>" Save and Quit
 
 """ Leader Mappings [VISUAL] """
 
