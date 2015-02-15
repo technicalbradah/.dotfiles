@@ -30,6 +30,7 @@ syntax enable             " enable syntax highlighting
 
 set autoindent            " auto-indent
 set cursorline
+set hidden                " SEE: http://nvie.com/posts/how-i-boosted-my-vim/
 set hlsearch              " All search matches should be highlighted
 "set ignorecase            " THIS IS STOOPID AND DANGEROUS. DON'T DO IT!!!!!!!!
 set incsearch             " But do highlight as you type your search.
