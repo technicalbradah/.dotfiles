@@ -127,8 +127,8 @@ nmap <leader>wq ;wq<CR>" Save and Quit
 
 """ Other Mappings """
 
-nmap <C-J> O<Esc>                             " Insert Newline above current line
-nmap <C-K> o<Esc>                             " Insert Newline below current line
+nmap <C-J> O<Esc>" Insert Newline above current line
+nmap <C-K> o<Esc>" Insert Newline below current line
 
 
 """ Enable correct syntax highlighting """
