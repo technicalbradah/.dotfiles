@@ -73,14 +73,10 @@ stty ixany
 stty ixoff -ixon
 
 alias swapcaps='/usr/bin/xmodmap /home/jonewby/.swapcaps'
-alias mstore='sudo mount 192.168.1.64:/store /store'
-alias umstore='sudo umount /store'
-alias sstore='ssh root@192.168.1.64'
 alias msec='sudo mount -t ecryptfs /store/root/secure /store/root/secure'
 alias umsec='sudo umount /store/root/secure'
 alias vnote='vim note:Home'
 alias cdnote='cd ~/Documents/Notes'
-alias xf='xflux -z 28262'
 
 
 function check_compression {
