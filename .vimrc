@@ -33,11 +33,13 @@ set cursorline
 set hidden                " SEE: http://nvie.com/posts/how-i-boosted-my-vim/
 set hlsearch              " All search matches should be highlighted
 "set ignorecase            " THIS IS STOOPID AND DANGEROUS if you're programming in a language that champions lowercase variable and keyword names. Because :s/<lowercase_pattern>/.../ will ignore case when searching/replacing <lowercase_pattern> DON'T DO IT!!!!!!!!
-"set smartcase             " This only works when ignorecase is set, instead of this search using \c to ignore case. E.g. /\cmysearchterm
 set incsearch             " But do highlight as you type your search.
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 set number                " show line numbers
 set ruler                 " Always show info along bottom.
+"set smartcase             " This only works when ignorecase is set, instead of this search using \c to ignore case. E.g. /\cmysearchterm
+set splitbelow
+set splitright
 set t_Co=256              " enable 256-color mode.
 set wildignore=*/tmp/*,*.so,*.swp,*.zip,*.bak,*.class,*.pyc
 
