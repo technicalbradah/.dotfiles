@@ -41,7 +41,8 @@ set ruler                 " Always show info along bottom.
 set splitbelow
 set splitright
 set t_Co=256              " enable 256-color mode.
-set wildignore=*/tmp/*,*.so,*.swp,*.zip,*.bak,*.class,*.pyc
+set wildignore=*.so,*.swp,*.zip,*.bak,*.class,*.pyc
+set wildmode=longest,list
 
 """ Default Tab Stops """
 
