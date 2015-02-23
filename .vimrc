@@ -196,3 +196,9 @@ runtime! config/**/*.vim
 " - launch NerdTree pane by default or only for certain types of projects
 " - Add YouCompleteMe
 " - http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
+
+" TODO: Trying this stuff out
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap } }zz
+nnoremap { {zz
