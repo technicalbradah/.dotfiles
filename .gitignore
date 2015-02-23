@@ -1,5 +1,4 @@
-.vim/bundle/*/doc
-.vim/bundle/matchit.zip
+.vim/bundle
 .vim/eclim/
 .vim/plugin/eclim.vim
 .vim/.netrwhist
