@@ -145,7 +145,6 @@ au BufNewFile,BufRead *.brs setf brs
 """ See: http://vimcasts.org/episodes/show-invisibles/ """
 
 nmap <leader>l :set list!<CR>
-imap <leader>l <ESC>:set list!<CR>i
 set listchars=tab:▸\ ,eol:¬,trail:.
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
