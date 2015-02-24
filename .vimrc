@@ -187,7 +187,10 @@ set directory=~/tmp/.vim/swp
 
 
 " Perl syntax folding?
+set foldmethod=syntax
+set foldlevelstart=0            "Increase this number to reduce the amount of default folding
 let perl_fold = 1
+let perl_fold_blocks = 1
 
 " Include other configs
 runtime! config/**/*.vim
