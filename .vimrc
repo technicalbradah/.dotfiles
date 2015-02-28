@@ -38,7 +38,7 @@ set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 set number                " show line numbers
 set ruler                 " Always show info along bottom.
 "set smartcase             " This only works when ignorecase is set, instead of this search using \c to ignore case. E.g. /\cmysearchterm
-set splitbelow
+"set splitbelow
 set splitright
 set t_Co=256              " enable 256-color mode.
 set wildignore=*.so,*.swp,*.zip,*.bak,*.class,*.pyc
