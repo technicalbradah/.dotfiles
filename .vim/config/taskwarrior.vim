@@ -4,6 +4,9 @@ let g:task_rc_override = 'rc.defaultheight=0'
 " Change report type
 let g:task_report_name     = 'long'
 
+" Fix line wrapping issues
+let g:task_rc_override = 'rc.defaultwidth=0'
+
 " Default colorscheme
 " highlight default link taskwarrior_Status      Include
 " highlight default link taskwarrior_depends     Todo
