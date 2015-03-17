@@ -1,7 +1,7 @@
 " Default to listing all tasks
 let g:task_rc_override = 'rc.defaultheight=0'
 
-" Change report type
+" Change default TW report type
 let g:task_report_name     = 'long'
 
 " Fix line wrapping issues
@@ -27,3 +27,6 @@ let g:task_rc_override = 'rc.defaultwidth=0'
 " Update colorscheme
 hi taskwarrior_tablehead term=underline cterm=underline ctermfg=25 gui=underline guifg=SlateBlue
 hi taskwarrior_description term=standout ctermfg=28 gui=bold guifg=#008700
+
+" Turn off field highlighting
+let g:task_highlight_field = 0
