@@ -69,6 +69,7 @@ Plugin 'matchit.zip'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'edkolev/promptline.vim'
 Plugin 'ervandew/supertab'
 Plugin 'godlygeek/tabular'
 Plugin 'tomtom/tlib_vim'
