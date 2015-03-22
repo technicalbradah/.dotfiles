@@ -234,7 +234,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Vim Highlighting
 	call <SID>X("Normal", s:foreground, s:background, "")
-	highlight LineNr ctermfg=238 ctermbg=252 guifg=#4d4d4c guibg=#d6d6d6
+"hi LineNr ctermfg=233 ctermbg=67 guifg=#1b1d1e guibg=#465457
+"hi! link LineNr WildMenu
+hi LineNr ctermfg=15 ctermbg=24 guifg=#FFFFFF guibg=#204a87
+hi SignColumn ctermfg=15 ctermbg=24 guifg=#FFFFFF guibg=#204a87
 	call <SID>X("NonText", s:selection, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:foreground, s:yellow, "")
@@ -257,7 +260,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 		call <SID>X("CursorColumn", "", s:line, "none")
 		call <SID>X("PMenu", s:foreground, s:selection, "none")
 		call <SID>X("PMenuSel", s:foreground, s:selection, "reverse")
-		call <SID>X("SignColumn", "", s:background, "none")
+		"call <SID>X("SignColumn", "", s:background, "none")
 	end
 	if version >= 703
 		call <SID>X("ColorColumn", "", s:line, "none")
