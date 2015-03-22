@@ -5,6 +5,9 @@
 	helper = cache --timeout=3600
 #[push]
 	#default = simple
-[color]                                                                                                                                           
-    diff = true                                                                                                                                   
+[color]
+    diff = true
     status = true
+[alias]
+    co = checkout
+    br = branch
