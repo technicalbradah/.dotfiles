@@ -38,7 +38,7 @@ set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 set number                " show line numbers
 set ruler                 " Always show info along bottom.
 "set smartcase             " This only works when ignorecase is set, instead of this search using \c to ignore case. E.g. /\cmysearchterm
-set splitbelow
+"set splitbelow
 set splitright
 set t_Co=256              " enable 256-color mode.
 set wildignore=*.so,*.swp,*.zip,*.bak,*.class,*.pyc
@@ -62,34 +62,48 @@ call vundle#begin()
 
 """ Enable the following plugins """
 
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'SirVer/ultisnips'
-Plugin 'bling/vim-airline'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'edkolev/promptline.vim'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'ervandew/supertab'
-Plugin 'farseer90718/vim-taskwarrior'
+
 Plugin 'gmarik/Vundle.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'honza/vim-snippets'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'matchit.zip'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'kchmck/vim-coffee-script'
+"Plugin 'vim-pandoc/vim-pandoc'
+"Plugin 'vim-pandoc/vim-pandoc-after'
+"Plugin 'vim-pandoc/vim-pandoc-syntax'
+
+Plugin 'chase/vim-ansible-yaml'
 Plugin 'rking/ag.vim'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'itchyny/calendar.vim'
+Plugin 'kien/ctrlp.vim'
 Plugin 'szw/vim-ctrlspace'
+Plugin 'mattn/emmet-vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'matchit.zip'
+Plugin 'scrooloose/nerdtree'
+Plugin 'edkolev/promptline.vim'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'godlygeek/tabular'
 Plugin 'tomtom/tlib_vim'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
+Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-shell'
-"Plugin 'Valloric/YouCompleteMe'
-
+Plugin 'farseer90718/vim-taskwarrior'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'gcmt/wildfire.vim'
 
 """ End of Plugins list """
 
@@ -104,10 +118,10 @@ map <silent> <leader>h :set hlsearch!<CR>" Enable/Disable highlighted matches
 
 "imap <leader>l <ESC>:set list!<CR>" SEE BELOW
 imap <leader>n <ESC>:set number!<CR>" Show/Hide line numbers
-imap <leader>Q <ESC>;q!<CR>" Quit without saving
-imap <leader>q <ESC>;q<CR>" Quit
-imap <leader>w <ESC>;w<CR>" Save the document
-imap <leader>wq <ESC>;wq<CR>" Save and Quit
+imap <leader>Q <ESC>:q!<CR>" Quit without saving
+imap <leader>q <ESC>:q<CR>" Quit
+imap <leader>w <ESC>:w<CR>" Save the document
+imap <leader>wq <ESC>:wq<CR>" Save and Quit
 
 """ Leader Mappings [NORMAL] """
 
@@ -117,15 +131,15 @@ nmap <leader>ev :e ~/.vimrc<CR>
 nmap <leader>n :set number!<CR>" Show/Hide line numbers
 nmap <Leader>p $p" Paste the " buffer to the end of the line
 nmap <Leader>P $a<Space><ESC>p" Paste the " buffer to the end of the line with a space
-nmap <leader>Q ;q!<CR>" Quit without saving
-nmap <leader>q ;q<CR>" Quit
+nmap <leader>Q :q!<CR>" Quit without saving
+nmap <leader>q :q<CR>" Quit
 nmap <silent> <leader>s :set spell!<CR>" Enable/Disable spell checking
 nmap <leader>sv :so ~/.vimrc<CR>" Source ~/.vimrc
 "nmap <leader>t: :Tabularize /:\zs<CR>
 "nmap <leader>t= :Tabularize /=<CR>
 "nmap <leader>t> :Tabularize /=><CR>
-nmap <leader>w ;w<CR>" Save the document
-nmap <leader>wq ;wq<CR>" Save and Quit
+nmap <leader>w :w<CR>" Save the document
+nmap <leader>wq :wq<CR>" Save and Quit
 
 """ Leader Mappings [VISUAL] """
 
@@ -210,3 +224,8 @@ nnoremap n nzz
 nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
+
+
+" Default to utf-8 encoding
+set encoding=utf-8
+set fileencoding=utf-8
