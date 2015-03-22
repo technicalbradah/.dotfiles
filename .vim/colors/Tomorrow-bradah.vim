@@ -349,9 +349,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlArg", s:red, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
 
-	" Diff Highlighting
-	call <SID>X("diffAdded", s:green, "", "")
-	call <SID>X("diffRemoved", s:red, "", "")
+
+" {{{ Diff highlighting
+hi DiffAdd    ctermfg=233 ctermbg=194 guifg=#003300 guibg=#DDFFDD gui=none cterm=none
+hi DiffChange ctermbg=255  guibg=#ececec gui=none   cterm=none
+hi DiffText   ctermfg=233  ctermbg=189  guifg=#000033 guibg=#DDDDFF gui=none cterm=none
+hi DiffDelete ctermfg=252 ctermbg=224   guifg=#DDCCCC guibg=#FFDDDD gui=none    cterm=none
+" }}}
 
 	" ShowMarks Highlighting
 	call <SID>X("ShowMarksHLl", s:orange, s:background, "none")
