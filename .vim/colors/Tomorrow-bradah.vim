@@ -236,8 +236,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Normal", s:foreground, s:background, "")
 "hi LineNr ctermfg=233 ctermbg=67 guifg=#1b1d1e guibg=#465457
 "hi! link LineNr WildMenu
-hi LineNr ctermfg=15 ctermbg=24 guifg=#FFFFFF guibg=#204a87
-hi SignColumn ctermfg=15 ctermbg=24 guifg=#FFFFFF guibg=#204a87
+"hi LineNr ctermfg=15 ctermbg=24 guifg=#FFFFFF guibg=#204a87
+"hi SignColumn ctermfg=15 ctermbg=24 guifg=#FFFFFF guibg=#204a87
+hi LineNr term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
+hi SignColumn term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
 	call <SID>X("NonText", s:selection, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:foreground, s:yellow, "")
