@@ -105,7 +105,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'vim-scripts/dbext.vim'
+"Plugin 'vim-scripts/dbext.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-shell'
@@ -185,7 +185,7 @@ highlight SpecialKey guifg=#4a4a59
 """ Tomorrow Night Color Scheme """
 
 set background=light
-colorscheme Tomorrow-bradah
+colorscheme Tomorrow-solarized-bradah
 
 
 """ Restore cusor to file position in previous edit """
