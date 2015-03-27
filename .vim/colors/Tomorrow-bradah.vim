@@ -234,13 +234,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Vim Highlighting
 	call <SID>X("Normal", s:foreground, s:background, "")
-"hi LineNr ctermfg=233 ctermbg=67 guifg=#1b1d1e guibg=#465457
-"hi! link LineNr WildMenu
-"hi LineNr ctermfg=15 ctermbg=24 guifg=#FFFFFF guibg=#204a87
-"hi SignColumn ctermfg=15 ctermbg=24 guifg=#FFFFFF guibg=#204a87
-hi LineNr term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
-hi SignColumn term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
-hi Normal ctermfg=10 ctermbg=15
 	call <SID>X("NonText", s:selection, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:foreground, s:yellow, "")
@@ -470,4 +463,16 @@ hi DiffDelete ctermfg=252 ctermbg=224   guifg=#DDCCCC guibg=#FFDDDD gui=none    
 	delf <SID>grey_colour
 	delf <SID>grey_level
 	delf <SID>grey_number
+
+    " Local Customizations
+    hi LineNr term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
+    hi SignColumn term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
+    hi Normal ctermfg=10 ctermbg=15
+
+    " gitgutter plugin customizations
+    hi GitGutterChange ctermfg=208 ctermbg=67 guifg=#bbbb00 guibg=#fafafa
+    hi GitGutterAdd ctermfg=28 ctermbg=67 guifg=#009900 guibg=#fafafa
+    hi GitGutterDelete ctermfg=160 ctermbg=67 guifg=#ff2222 guibg=#fafafa
+    hi VertSplit term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
+    hi StatusLineNC ctermfg=67 ctermbg=67 gui=reverse guifg=#efefef guibg=#4d4d4c
 endif
