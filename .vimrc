@@ -199,7 +199,7 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
-set viminfo='10,\"100,:20,%,n~/.viminfo
+set viminfo='50,\"100,:20,%,n~/tmp/.vim/.viminfo
 
 
 """ Set backup and swp dir. Don't forget to clear tmp dir out once in a while """
