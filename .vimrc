@@ -70,6 +70,8 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'vim-pandoc/vim-pandoc-after'
 "Plugin 'vim-pandoc/vim-pandoc-syntax'
 
+
+Plugin 'majutsushi/tagbar'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'SirVer/ultisnips'
@@ -89,6 +91,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'matchit.zip'
 Plugin 'mattn/emmet-vim'
+Plugin 'mileszs/ack.vim'
 Plugin 'rking/ag.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
@@ -102,10 +105,10 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-scripts/dbext.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-shell'
-
 """ End of Plugins list """
 
 call vundle#end()
@@ -231,3 +234,5 @@ nnoremap { {zz
 " Default to utf-8 encoding
 set encoding=utf-8
 set fileencoding=utf-8
+
+let g:dbext_default_profile_mySQL = 'type=MYSQL:user=root:passwd=password:dbname=mysql' 

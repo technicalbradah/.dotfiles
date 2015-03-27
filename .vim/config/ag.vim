@@ -7,4 +7,7 @@ if executable('ag')
 
     " ag is fast enough that CtrlP doesn't need to cache
     let g:ctrlp_use_caching = 0
+
+    " Use ag with the ack plugin if available
+    let g:ackprg = 'ag --vimgrep'
 endif
