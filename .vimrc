@@ -228,9 +228,6 @@ nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
 
-
 " Default to utf-8 encoding
 set encoding=utf-8
 set fileencoding=utf-8
-
-let g:dbext_default_profile_mySQL = 'type=MYSQL:user=root:passwd=password:dbname=mysql' 
