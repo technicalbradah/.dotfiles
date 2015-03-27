@@ -183,7 +183,7 @@ highlight SpecialKey guifg=#4a4a59
 """ Tomorrow Night Color Scheme """
 
 set background=light
-colorscheme Tomorrow-solarized-bradah
+colorscheme Tomorrow-solarized-dark
 
 
 """ Restore cusor to file position in previous edit """
