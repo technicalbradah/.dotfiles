@@ -18,7 +18,7 @@ vnoremap ' ;
 " Disable arrow keys
 for prefix in ['i', 'n', 'v']
 for key in ['<Up>', '<Down>', '<Left>', '<Right>']
-exe prefix . "noremap " . key . " <Nop>"                                                                              
+exe prefix . "noremap " . key . " <Nop>"
 endfor
 endfor
 
@@ -54,6 +54,7 @@ set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 
 
+
 """ Enable Vundle NOTE Move below Mappings to accept default mappings for below plugins """
 
 filetype off " Pathogen needs to run before plugin indent on
@@ -78,7 +79,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'chase/vim-ansible-yaml'
-Plugin 'christoomey/vim-tmux-navigator'
+"Plugin 'christoomey/vim-tmux-navigator'
 "Plugin 'edkolev/promptline.vim'
 "Plugin 'edkolev/tmuxline.vim'
 Plugin 'ervandew/supertab'
@@ -183,7 +184,7 @@ highlight SpecialKey guifg=#4a4a59
 """ Tomorrow Night Color Scheme """
 
 set background=light
-colorscheme Tomorrow-solarized-dark
+colorscheme Tomorrow-solarized-bradah
 
 
 """ Restore cusor to file position in previous edit """
