@@ -33,6 +33,7 @@ set cursorline
 set hidden                " SEE: http://nvie.com/posts/how-i-boosted-my-vim/
 set hlsearch              " All search matches should be highlighted
 "set ignorecase            " THIS IS STOOPID AND DANGEROUS if you're programming in a language that champions lowercase variable and keyword names. Because :s/<lowercase_pattern>/.../ will ignore case when searching/replacing <lowercase_pattern> DON'T DO IT!!!!!!!!
+"http://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim
 set incsearch             " But do highlight as you type your search.
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 set number                " show line numbers
@@ -71,7 +72,7 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'vim-pandoc/vim-pandoc-after'
 "Plugin 'vim-pandoc/vim-pandoc-syntax'
 
-
+Plugin 'vim-scripts/dbext.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'MarcWeber/vim-addon-mw-utils'
