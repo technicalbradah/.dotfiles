@@ -1,6 +1,8 @@
 " Open NerdTree pane with <leader>d
-nmap <leader>d :NERDTreeToggle<CR>
-" Testing alternate mapping
-nmap tnt :NERDTreeToggle<CR>
-" Automatically close the NERDTree pane when selecting a file
+nnoremap <leader>d :NERDTreeToggle<CR>
+
+" Mapping to toggle NERDTree pane
+nnoremap <leader>nt :NERDTreeToggle<CR>
+
+" Aut<leader>matically close the NERDTree pane when selecting a file
 let NERDTreeQuitOnOpen=1
