@@ -8,3 +8,9 @@ let g:netrw_browsex_viewer= "gnome-open"
 
 " Toggle folds
 nmap <leader>fo zA
+
+" Ease window navigation
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
