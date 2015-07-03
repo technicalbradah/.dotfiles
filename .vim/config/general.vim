@@ -54,3 +54,28 @@ function! MyFoldText()
   return "▶ " . new_sub . info
 endfunction
 
+"Testing transparent terminal background support
+" Default is transparent background
+hi Normal ctermfg=10 ctermbg=none guifg=#4d4d4c guibg=#fafafa
+nnoremap tton :hi Normal ctermfg=10 ctermbg=none guifg=#4d4d4c guibg=#fafafa<CR>
+nnoremap ttoff :hi Normal ctermfg=10 ctermbg=15 guifg=#4d4d4c guibg=#fafafa<CR>
+
+
+" Improves loading of files larger than 10mb
+let g:LargeFile = 1024 * 1024 * 10
+augroup LargeFile 
+    autocmd BufReadPre * let f=getfsize(expand("<afile>")) | if f > g:LargeFile || f == -2 | call LargeFile() | endif
+augroup END
+
+function LargeFile()
+    " no syntax highlighting etc
+    set eventignore+=FileType
+    " save memory when other file is viewed
+    setlocal bufhidden=unload
+    " is read-only (write with :w new_filename)
+    setlocal buftype=nowrite
+    " no undo possible
+    setlocal undolevels=-1
+    " display message
+    autocmd VimEnter *  echo "The file is larger than " .  (g:LargeFile / 1024 / 1024) . " MB, so some options are changed (see .vimrc for details)."
+endfunction
