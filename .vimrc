@@ -206,7 +206,7 @@ set viminfo='50,\"100,:20,%,n~/tmp/.vim/.viminfo
 """ Set backup and swp dir. Don't forget to clear tmp dir out once in a while """
 
 set backupdir=~/tmp/.vim/backup
-set directory=~/tmp/.vim/swp
+set directory=~/tmp/.vim/swp//
 
 
 " Perl syntax folding?
