@@ -125,7 +125,9 @@ map <silent> <leader>h :set hlsearch!<CR>" Enable/Disable highlighted matches
 imap <leader>n <ESC>:set number!<CR>" Show/Hide line numbers
 imap <leader>Q <ESC>:q!<CR>" Quit without saving
 imap <leader>q <ESC>:q<CR>" Quit
+imap <leader>qa <ESC>:qa<CR>" Quit All
 imap <leader>w <ESC>:w<CR>" Save the document
+imap <leader>wa <ESC>:wa<CR>" Save all documents
 imap <leader>wq <ESC>:wq<CR>" Save and Quit
 
 """ Leader Mappings [NORMAL] """
@@ -138,12 +140,14 @@ nmap <Leader>p $p" Paste the " buffer to the end of the line
 nmap <Leader>P $a<Space><ESC>p" Paste the " buffer to the end of the line with a space
 nmap <leader>Q :q!<CR>" Quit without saving
 nmap <leader>q :q<CR>" Quit
-nmap <silent> <leader>s :set spell!<CR>" Enable/Disable spell checking
+nmap <leader>qa :qa<CR>" Quit
+"nmap <silent> <leader>s :set spell!<CR>" Enable/Disable spell checking
 nmap <leader>sv :so ~/.vimrc<CR>" Source ~/.vimrc
 "nmap <leader>t: :Tabularize /:\zs<CR>
 "nmap <leader>t= :Tabularize /=<CR>
 "nmap <leader>t> :Tabularize /=><CR>
 nmap <leader>w :w<CR>" Save the document
+nmap <leader>wa :wa<CR>" Save the document
 nmap <leader>wq :wq<CR>" Save and Quit
 
 """ Leader Mappings [VISUAL] """
