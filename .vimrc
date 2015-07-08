@@ -110,6 +110,7 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-shell'
+Plugin 'christoomey/vim-tmux-navigator'
 """ End of Plugins list """
 
 call vundle#end()
