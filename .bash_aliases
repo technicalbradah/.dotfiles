@@ -57,7 +57,7 @@ alias Grep=grep
 
 
 # TMUX
-alias ta='tmux attach || tmux'
+alias ta='tmux attach -d || tmux'
 
 alias df='df -h'
 

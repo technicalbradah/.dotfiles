@@ -6,7 +6,6 @@ prompt adam1
 
 setopt histignorealldups sharehistory
 
-# Use emacs keybindings even if our EDITOR is set to vi
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
@@ -56,3 +55,4 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 source ~/.shell_prompt.sh
 source ~/.bash_aliases
+export PATH=$PATH:~/bin
