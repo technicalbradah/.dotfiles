@@ -229,6 +229,7 @@ runtime! config/**/*.vim
 " - launch NerdTree pane by default or only for certain types of projects
 " - Add YouCompleteMe
 " - http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme
+"   http://www.reddit.com/r/vim/comments/1pgqdn/are_youcompleteme_and_supertab_mutually_exclusive/
 
 " TODO: Trying this stuff out
 nnoremap n nzz
