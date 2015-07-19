@@ -109,6 +109,8 @@ Plugin 'vim-scripts/dbext.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-shell'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'pangloss/vim-javascript'
 """ End of Plugins list """
 
 call vundle#end()
