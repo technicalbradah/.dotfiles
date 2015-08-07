@@ -89,3 +89,5 @@ endfunction
 " Avoid Markdown files from being ft=Modula2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" Disable autocommenting
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
