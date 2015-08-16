@@ -18,5 +18,6 @@ imap <leader>m :set mouse=a<CR>
 imap <leader>mn :set mouse=<CR>
 autocmd Filetype notes nmap <leader>i ggjwgf
 autocmd Filetype notes nmap <leader>f gf
+autocmd Filetype notes nmap <leader>u ggj3Wgf
 autocmd Filetype notes nmap <leader>w ;w<CR>
 autocmd Filetype notes nmap <leader>o gf
