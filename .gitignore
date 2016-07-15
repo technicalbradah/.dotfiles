@@ -1,4 +1,7 @@
+.vim/autoload/plug.vim
+.vim/bundle/
 .vim/eclim/
+.vim/plugged/
 .vim/plugin/eclim.vim
 .vim/.netrwhist
 .fonts/fonts.dir

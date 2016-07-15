@@ -25,6 +25,11 @@ endfor
 " Enable syntax highlighting
 syntax enable             " enable syntax highlighting
 
+""" Make sure vim-plug is installed and loaded """
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall | source ~/.vimrc
+endif
 
 """ Set Vim Variables """
 
@@ -56,67 +61,60 @@ set smarttab              " use tabs at the start of a line, spaces elsewhere
 
 
 
-""" Enable Vundle NOTE Move below Mappings to accept default mappings for below plugins """
-
-filetype off " Pathogen needs to run before plugin indent on
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
 """ Enable the following plugins """
 
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim'
+"Plug 'edkolev/promptline.vim'
+"Plug 'edkolev/tmuxline.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'Valloric/YouCompleteMe', { 'do' : '~/.vim/plugged/YouCompleteMe/install.py --gocode-completer --tern-completer'  }
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'chase/vim-ansible-yaml', { 'for' : ['yaml']  }
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ervandew/supertab'
+"Plug 'farseer90718/vim-taskwarrior'
+Plug 'blindFS/vim-taskwarrior', { 'on': ['TW'] }
+Plug 'gcmt/wildfire.vim'
+Plug 'godlygeek/tabular'
+Plug 'jiangmiao/auto-pairs'
+Plug 'kchmck/vim-coffee-script', { 'for' : ['coffee']  }
+Plug 'kien/ctrlp.vim'
+Plug 'majutsushi/tagbar'
+Plug 'matchit.zip'
+Plug 'mattn/emmet-vim', { 'for' : ['javascript', 'html', 'css', 'scss', 'less']  }
+Plug 'mileszs/ack.vim'
+Plug 'rking/ag.vim'
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind']  }
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdcommenter'
+Plug 'sjl/gundo.vim'
+Plug 'szw/vim-ctrlspace'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+"Plug 'vim-pandoc/vim-pandoc'
+"Plug 'vim-pandoc/vim-pandoc-after'
+"Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-scripts/dbext.vim'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-shell'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'pangloss/vim-javascript', { 'for' : ['javascript', 'html', 'css', 'scss', 'less']  }
+""" End of Plugs list """
 
-"Plugin 'edkolev/promptline.vim'
-"Plugin 'edkolev/tmuxline.vim'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'SirVer/ultisnips'
-"Plugin 'Valloric/YouCompleteMe'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'chase/vim-ansible-yaml'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'ervandew/supertab'
-"Plugin 'farseer90718/vim-taskwarrior'
-Plugin 'blindFS/vim-taskwarrior'
-Plugin 'gcmt/wildfire.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'honza/vim-snippets'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'matchit.zip'
-Plugin 'mattn/emmet-vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'rking/ag.vim'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'sjl/gundo.vim'
-Plugin 'szw/vim-ctrlspace'
-Plugin 'tomtom/tlib_vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-"Plugin 'vim-pandoc/vim-pandoc'
-"Plugin 'vim-pandoc/vim-pandoc-after'
-"Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'vim-scripts/dbext.vim'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-notes'
-Plugin 'xolox/vim-shell'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'pangloss/vim-javascript'
-""" End of Plugins list """
+call plug#end()
 
-call vundle#end()
 
 
 """ Leader Mappings [ALL]    """
