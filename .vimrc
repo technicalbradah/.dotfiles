@@ -70,7 +70,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'easymotion/vim-easymotion'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'Valloric/YouCompleteMe', { 'do' : '~/.vim/plugged/YouCompleteMe/install.py --gocode-completer --tern-completer'  }
+Plug 'Valloric/YouCompleteMe', { 'do' : '~/.vim/plugged/YouCompleteMe/install.py --clang-completer --tern-completer'  }
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
