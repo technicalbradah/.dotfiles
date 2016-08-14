@@ -111,6 +111,12 @@ Plug 'xolox/vim-notes'
 Plug 'xolox/vim-shell'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'pangloss/vim-javascript', { 'for' : ['javascript', 'html', 'css', 'scss', 'less']  }
+
+"""Dlang
+Plug 'idanarye/vim-dutyl', { 'for' : 'd'  }
+Plug 'kiith-sa/DSnips', { 'do' : 'curl -sfLo ~/.vim/UltiSnips/d.snippets --create-dirs https://raw.githubusercontent.com/kiith-sa/DSnips/master/d.snippets'  }
+Plug 'Shougo/vimproc' | Plug 'idanarye/vim-vebugger', { 'for' : 'd'  }
+
 """ End of Plugs list """
 
 call plug#end()

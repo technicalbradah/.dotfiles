@@ -91,3 +91,7 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Disable autocommenting
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
+""" Configure Dutyl for DCD
+let g:dutyl_stdImportPaths=['/usr/include/dmd']
+
