@@ -1,5 +1,9 @@
 """ Initial Settings """
 
+" Default to utf-8 encoding
+set encoding=utf-8
+set fileencoding=utf-8
+
 " Set <leader> to ,
 let mapleader=","
 
@@ -243,7 +247,3 @@ nnoremap n nzz
 nnoremap N Nzz
 nnoremap } }zz
 nnoremap { {zz
-
-" Default to utf-8 encoding
-set encoding=utf-8
-set fileencoding=utf-8
