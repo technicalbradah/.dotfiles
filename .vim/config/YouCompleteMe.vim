@@ -7,9 +7,9 @@
 set completeopt=menu,menuone
 "Make YCM/Snipmate/Supertab/Syntastic play nice together
 let g:ycm_register_as_syntastic_checker = 1
-let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:ycm_collect_identifiers_from_tags_files = 1
-let g:SuperTabDefaultCompletionType = '<C-Tab>'
+let g:SuperTabDefaultCompletionType = '<C-n>'
 "Must specify when using completion in minimal (E.g. containerized) environments
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
