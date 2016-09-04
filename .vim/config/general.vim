@@ -95,3 +95,5 @@ autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 """ Configure Dutyl for DCD
 let g:dutyl_stdImportPaths=['/usr/include/dmd']
 
+" Set filetype for diet templates
+autocmd BufNewFile,BufReadPost *.dt set filetype=pug

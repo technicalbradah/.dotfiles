@@ -121,6 +121,7 @@ Plug 'pangloss/vim-javascript', { 'for' : ['javascript', 'html', 'css', 'scss', 
 Plug 'idanarye/vim-dutyl', { 'for' : 'd'  }
 Plug 'kiith-sa/DSnips', { 'do' : 'curl -sfLo ~/.vim/UltiSnips/d.snippets --create-dirs https://raw.githubusercontent.com/kiith-sa/DSnips/master/d.snippets'  }
 Plug 'Shougo/vimproc' | Plug 'idanarye/vim-vebugger', { 'for' : 'd'  }
+Plug 'digitaltoad/vim-pug', { 'for' : 'pug' }
 
 """ End of Plugs list """
 
