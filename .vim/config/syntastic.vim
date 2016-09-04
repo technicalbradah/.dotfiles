@@ -20,3 +20,6 @@ let g:syntastic_warning_symbol = "⚠"
 nnoremap <leader>st :SyntasticToggleMode<CR>
 nnoremap <leader>sc :SyntasticCheck<CR>
 nnoremap <leader>sr :SyntasticReset<CR>
+
+" Stop complaining about vibe.d diet templates
+let g:syntastic_d_compiler_options = '-J./views'
