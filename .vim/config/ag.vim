@@ -10,4 +10,7 @@ if executable('ag')
 
     " Use ag with the ack plugin if available
     let g:ackprg = 'ag --vimgrep --hidden'
+    
+    "  start searching from project root instead of the cwd
+    let g:ag_working_path_mode="r"
 endif
