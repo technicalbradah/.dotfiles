@@ -1,3 +1,4 @@
+.ctags
 .vim/autoload/plug.vim
 .vim/bundle/
 .vim/eclim/
