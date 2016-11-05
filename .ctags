@@ -1,4 +1,4 @@
--f .ctags
+-f .tags
 --recurse=yes
 --tag-relative=yes
 --exclude=.git
