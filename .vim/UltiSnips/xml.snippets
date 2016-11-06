@@ -1,0 +1,29 @@
+snippet xsgcomp
+<component name="${1:componentName}" extends="Scene">
+	$0
+</component>
+endsnippet
+
+snippet xsgintf
+<interface>
+	<field id="${1:myID}" type="${2:myType}"${3: alias="${4:myAlias}"}${5: onChange="${6:changefunc}"}/>$0
+</interface>
+endsnippet
+
+snippet xsgfield
+<field id="${1:myID}" type="${2:myType}"${3: alias="${4:myAlias}"}${5: onChange="${6:changefunc}"}/>$0
+endsnippet
+
+snippet xsgscript
+<script type="${1:text/brightscript}" uri="${2:pkg:/${3:path}}"/>$0
+endsnippet
+
+snippet xsgxml
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright ${1:`date +%Y`} Jeric O. Newby  All Rights Reserved. -->
+<component name="${2:SceneName}" extends="${3:Scene}">
+  <children>
+	$0
+  </children>
+</component>
+endsnippet
