@@ -112,6 +112,7 @@ Plug 'tpope/vim-unimpaired'
 "Plug 'vim-pandoc/vim-pandoc-after'
 "Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-scripts/dbext.vim'
+Plug 'xolox/vim-lua-inspect', { 'for' : ['lua'] }
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-shell'
