@@ -30,6 +30,35 @@ snippet int
 $1 as Integer$0
 endsnippet
 
+snippet mani
+#
+#  Copyright (c) ${1:`date +%Y`} Jeric O. Newby. All rights reserved.
+#  Roku Channel Manifest File
+#
+
+# Channel Details
+title=${2:Video Player}
+subtitle=${3:Video Player Example}
+major_version=${4:0}
+minor_version=${5:1}
+build_version=${6:0}
+
+# Channel Assets
+mm_icon_focus_sd=pkg:/images/channel-poster_sd.png
+mm_icon_focus_hd=pkg:/images/channel-poster_hd.png
+mm_icon_focus_fhd=pkg:/images/channel-poster_fhd.png
+
+# Splash Screen + Loading Screen Artwork
+splash_screen_sd=pkg:/images/splash-screen_sd.jpg
+splash_screen_hd=pkg:/images/splash-screen_hd.jpg
+splash_screen_fhd=pkg:/images/splash-screen_fhd.jpg
+splash_color=#${7:000000}
+splash_min_time=${8:0}
+
+# Resolution
+ui_resolutions=${9:fhd}
+endsnippet
+
 snippet obj
 $1 as Object$0
 endsnippet

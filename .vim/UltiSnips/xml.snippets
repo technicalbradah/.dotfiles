@@ -1,5 +1,12 @@
+snippet xsgcdata
+<![CDATA[
+$0
+]]>
+
+  endsnippet
+
 snippet xsgcomp
-<component name="${1:componentName}" extends="Scene">
+<component name="${1:componentName}" extends="${2:Scene}">
 	$0
 </component>
 endsnippet
@@ -20,7 +27,7 @@ endsnippet
 
 snippet xsgxml
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- Copyright ${1:`date +%Y`} Jeric O. Newby  All Rights Reserved. -->
+<!-- Copyright ${1:`date +%Y`} Jeric O. Newby. All Rights Reserved. -->
 <component name="${2:SceneName}" extends="${3:Scene}">
   <children>
 	$0
