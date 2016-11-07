@@ -1,0 +1,119 @@
+# My Custom Lua snippets
+priority -40
+
+snippet do "do block"
+do
+	$1
+end
+
+$0
+endsnippet
+
+snippet for "numeric for loop" b
+for ${1:i}=${2:first},${3:last}${4/^..*/(?0:,:)/}${4:step} do
+	$5
+end
+
+$0
+endsnippet
+
+snippet fori "ipair for foop" b
+for ${1:idx}, ${2:val} in ipairs(${3:table_name}) do
+	$4
+end
+
+$0
+endsnippet
+
+snippet forp "pair for loop" b
+for ${1:name}, ${2:val} in pairs(${3:table_name}) do
+	$4
+end
+
+$0
+endsnippet
+
+snippet if "if statement" b
+if $1 then
+	$2
+end
+
+$0
+endsnippet
+
+snippet ife "if/else statement" b
+if $1 then
+	$2
+else
+	$3
+end
+
+$0
+endsnippet
+
+snippet ifee "if/elseif/else statement" b
+if $1 then
+	$2
+elseif $3 then
+	$4
+else
+	$5
+end
+
+$0
+endsnippet
+
+snippet mfun "New module method" b
+function _M.${1:fname}(self${2:, ...})
+	$0
+end
+
+$0
+endsnippet
+
+snippet newmod "New Lua module" b
+local ok, new_tab = pcall(require, "table.new") 
+if not ok or type(new_tab) ~= "function" then
+    new_tab = function (narr, nrec) return {} end
+end
+
+local ${1:_M} = new_tab(${2:0},${3:0})
+_M._VERSION = '${4:0}.${5:1}.${6:0}'
+
+local mt = { __index = _M }
+$0
+function _M.new(self${7:, args})
+    return setmetatable({}, mt)
+end
+return _M
+endsnippet
+
+snippet newtab "Preallocate a new (LuaJIT?) table." b
+local ok, new_tab = pcall(require, "table.new") 
+if not ok or type(new_tab) ~= "function" then
+    new_tab = function (narr, nrec) return {} end
+end
+
+local ${1:_M} = new_tab(${2:0},${3:0})
+$0
+endsnippet
+
+snippet repeat "repeat loop" b
+repeat
+	$1
+until $2
+
+$0
+endsnippet
+
+snippet req "Instantiate Lua module" b
+local ${1:var} = require("${2:module}")
+endsnippet
+
+snippet while "while loop" b
+while $1 do
+	$2
+end
+
+$0
+endsnippet
