@@ -5,29 +5,49 @@ $1 = {
 endsnippet
 
 snippet bool
-$1 as Boolean$0
+${1:var} as Boolean
 endsnippet
 
 snippet double
-$1 as Double$0
+${1:var} as Double
 endsnippet
 
 snippet dyn
-$1 as Dynamic$0
+${1:var} as Dynamic
 endsnippet
 
 snippet float
-$1 as Float$0
+${1:var} as Float
 endsnippet
 
 snippet fun
-Function ${1:Funcname}($2) as ${3:Retval}
+Function ${1:Funcname}(${2:args}) as ${3:Retval}
 	$0
 End Function
 endsnippet
 
+snippet ife "Conditional if..else (ife)"
+if ${1:-condition-} then
+	${2:-body-}
+else 
+	${3:-else-}
+endif
+$0
+endsnippet
+
+snippet ifee "Conditional if..elsif..else (ifee)"
+if ${1:-condition-} then
+	${2:-body-}
+elseif ${3:-nextcondition-} 
+	${4:-else if-}
+else 
+	${5:-else-}
+endif
+$0
+endsnippet
+
 snippet int
-$1 as Integer$0
+$1 as Integer
 endsnippet
 
 snippet mani
@@ -60,23 +80,25 @@ ui_resolutions=${9:fhd}
 endsnippet
 
 snippet obj
-$1 as Object$0
+${1:var} as Object
 endsnippet
 
 snippet roaa
-$1 = CreateObject("roAssociativeArray")
+${1:var} = CreateObject("roAssociativeArray")
+$0
 endsnippet
 
 snippet roar
-$1 = CreateObject("roArray")
+${1:var} = CreateObject("roArray")
+$0
 endsnippet
 
 snippet str
-$1 as String$0
+${1:var} as String
 endsnippet
 
 snippet sub
-Sub ${1:Main}(${2:prototype})
+Sub ${1:Main}(${2:args})
 	$0
 End Sub
 endsnippet
