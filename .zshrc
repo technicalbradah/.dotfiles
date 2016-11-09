@@ -56,3 +56,5 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 source ~/.shell_prompt.sh
 source ~/.bash_aliases
 export PATH=$PATH:~/bin
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
