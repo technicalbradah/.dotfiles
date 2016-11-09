@@ -4,5 +4,29 @@ snippet for "for"
 for my $${1:var} (${2:expression}) {
 	${3:# body...}
 }
+$0
+endsnippet
 
+snippet mooov "Moose override superclass method" b
+override ${1:method} => sub {
+	my ($self,${2:var1}) @_;
+
+	$0
+}
+endsnippet
+
+snippet mooro "Default Moose Read-only attribute" b
+has ${1:var} => (is => 'ro');
+endsnippet
+
+snippet moorw "Default Moose Read-write attribute" b
+has ${1:var} => (is => 'rw');
+endsnippet
+
+snippet msub "Perl module Sub" b
+sub ${1:fname} {
+	my ($self,${2:var1}) = @_;
+
+	$0
+}
 endsnippet
