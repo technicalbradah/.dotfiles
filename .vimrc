@@ -89,7 +89,7 @@ Plug 'gcmt/wildfire.vim'
 Plug 'godlygeek/tabular'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kchmck/vim-coffee-script', { 'for' : ['coffee']  }
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'majutsushi/tagbar'
 Plug 'matchit.zip'
 Plug 'mattn/emmet-vim', { 'for' : ['javascript', 'html', 'css', 'scss', 'less']  }
