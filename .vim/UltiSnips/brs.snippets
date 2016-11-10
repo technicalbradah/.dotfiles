@@ -26,6 +26,13 @@ Function ${1:Funcname}(${2:args}) as ${3:Retval}
 End Function
 endsnippet
 
+snippet if "Conditional if"
+if ${1:-condition-} then
+	${2:-body-}
+endif
+$0
+endsnippet
+
 snippet ife "Conditional if..else (ife)"
 if ${1:-condition-} then
 	${2:-body-}
@@ -84,13 +91,11 @@ ${1:var} as Object
 endsnippet
 
 snippet roaa
-${1:var} = CreateObject("roAssociativeArray")
-$0
+${1:var} = CreateObject("roAssociativeArray")$0
 endsnippet
 
 snippet roar
-${1:var} = CreateObject("roArray")
-$0
+${1:var} = CreateObject("roArray")$0
 endsnippet
 
 snippet str
@@ -99,6 +104,7 @@ endsnippet
 
 snippet sub
 Sub ${1:Main}(${2:args})
-	$0
+	$3
 End Sub
+$0
 endsnippet

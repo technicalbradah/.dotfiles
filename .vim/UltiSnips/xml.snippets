@@ -3,7 +3,7 @@ snippet xsgcdata
 $0
 ]]>
 
-  endsnippet
+endsnippet
 
 snippet xsgcomp
 <component name="${1:componentName}" extends="${2:Scene}">
@@ -21,8 +21,16 @@ snippet xsgfield
 <field id="${1:myID}" type="${2:myType}"${3: alias="${4:myAlias}"}${5: onChange="${6:changefunc}"}/>$0
 endsnippet
 
+snippet xsgfn "Scene graph find node boiler" b
+${1:var} = m.top.findNode("${2:nodeName}")$0
+endsnippet
+
 snippet xsgscript
 <script type="${1:text/brightscript}" uri="${2:pkg:/${3:path}}"/>$0
+endsnippet
+
+snippet xsgsf "XML scene graph setFocus boilerplate" b
+m.top.setFocus(true)
 endsnippet
 
 snippet xsgxml
