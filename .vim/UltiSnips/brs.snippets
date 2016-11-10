@@ -90,12 +90,16 @@ snippet obj
 ${1:var} as Object
 endsnippet
 
-snippet roaa
+snippet roaa "create BrightScript roAssociativeArray object" b
 ${1:var} = CreateObject("roAssociativeArray")$0
 endsnippet
 
-snippet roar
+snippet roar "create roArray object" b
 ${1:var} = CreateObject("roArray")$0
+endsnippet
+
+snippet roport "Roku SG Port boilerplate" b
+m.port = CreateObject("roMessagePort")
 endsnippet
 
 snippet str
