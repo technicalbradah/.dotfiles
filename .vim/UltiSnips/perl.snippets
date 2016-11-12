@@ -32,7 +32,7 @@ sub ${1:fname} {
 endsnippet
 
 snippet _pm_skel "Default Perl module spec" b
-package ${1:`!v expand('%:p:s?.*lib/??:r:gs?/?::?')`};
+package ${1:`!v expand('%:p:s@.*lib/@@:r:gs@/@::@')`};
 
 use ${2:v5.14};
 use warnings;
