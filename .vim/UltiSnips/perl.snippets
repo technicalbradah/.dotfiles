@@ -31,15 +31,31 @@ sub ${1:fname} {
 }
 endsnippet
 
-snippet pm "Default Perl class spec" b
-package ${1:ClassName};
+snippet _pm_skel "Default Perl module spec" b
+package ${1:`!v expand('%:p:s?.*lib/??:r:gs?/?::?')`};
 
-use 5.010;
+use ${2:v5.14};
 use warnings;
 
 use Moose;
 use namespace::autoclean;
+${3:#}BEGIN {extends '${4:ParentClass}'};
 
 $0
 1;
+
+__END__
+endsnippet
+
+snippet _skel "Default .pl skeleton" b
+#!/usr/bin/env perl
+
+use ${1:v5.14};
+use warnings;
+
+$0
+
+main();
+exit;
+
 endsnippet
