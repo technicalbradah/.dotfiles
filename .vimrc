@@ -72,6 +72,7 @@ call plug#begin('~/.vim/plugged')
 
 "Plug 'edkolev/promptline.vim'
 "Plug 'edkolev/tmuxline.vim'
+Plug 'pgilad/vim-skeletons'
 Plug 'sukima/xmledit', { 'for' : ['xml']  }
 Plug 'easymotion/vim-easymotion'
 Plug 'MarcWeber/vim-addon-mw-utils'
