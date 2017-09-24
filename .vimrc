@@ -94,7 +94,6 @@ Plug 'kchmck/vim-coffee-script', { 'for' : ['coffee']  }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'majutsushi/tagbar'
-Plug 'matchit.zip'
 Plug 'mattn/emmet-vim', { 'for' : ['javascript', 'html', 'css', 'scss', 'less']  }
 Plug 'mileszs/ack.vim'
 Plug 'rking/ag.vim'
@@ -242,6 +241,9 @@ let perl_fold_blocks = 1
 
 " Include other configs
 runtime! config/**/*.vim
+
+" Force use of packaged matchit
+runtime! macros/matchit.vim
 
 " TODO:
 " - launch NerdTree pane by default or only for certain types of projects
