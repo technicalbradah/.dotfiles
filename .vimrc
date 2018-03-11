@@ -207,7 +207,8 @@ highlight SpecialKey guifg=#4a4a59
 """ Tomorrow Night Color Scheme """
 
 set background=light
-colorscheme Tomorrow-solarized-bradah
+let g:tomorrow_customize="gruvbox-terminator"
+colorscheme Tomorrow
 
 
 """ Restore cusor to file position in previous edit """
