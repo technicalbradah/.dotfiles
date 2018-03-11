@@ -223,7 +223,11 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
-set viminfo='50,\"100,:20,%,n~/tmp/.vim/.viminfo
+if has('nvim')
+    set viminfo='50,\"100,:20,%,n~/tmp/.vim/nviminfo
+else
+    set viminfo='50,\"100,:20,%,n~/tmp/.vim/viminfo
+endif
 
 
 """ Set backup and swp dir. Don't forget to clear tmp dir out once in a while """
