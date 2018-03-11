@@ -102,7 +102,6 @@ Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind']  }
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sjl/gundo.vim'
-Plug 'szw/vim-ctrlspace'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
