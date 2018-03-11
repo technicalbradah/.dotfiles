@@ -135,3 +135,5 @@ set fillchars=vert:\ ,fold:-
 hi VertSplit term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
 hi StatusLineNC ctermfg=67 ctermbg=67 gui=reverse guifg=#efefef guibg=#4d4d4c
 
+" Quickly change buffers
+nmap <SPACE> ;bn<cr>
