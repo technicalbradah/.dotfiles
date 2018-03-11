@@ -61,9 +61,9 @@ endfunction
 
 "Testing transparent terminal background support
 " Default is transparent background
-hi Normal ctermfg=10 ctermbg=none guifg=#4d4d4c guibg=#fafafa
-nnoremap tton :hi Normal ctermfg=10 ctermbg=none guifg=#4d4d4c guibg=#fafafa<CR>
-nnoremap ttoff :hi Normal ctermfg=10 ctermbg=15 guifg=#4d4d4c guibg=#fafafa<CR>
+" hi Normal ctermfg=10 ctermbg=none guifg=#4d4d4c guibg=#fafafa
+" nnoremap tton :hi Normal ctermfg=10 ctermbg=none guifg=#4d4d4c guibg=#fafafa<CR>
+" nnoremap ttoff :hi Normal ctermfg=10 ctermbg=15 guifg=#4d4d4c guibg=#fafafa<CR>
 
 
 " Improves loading of files larger than 10mb
