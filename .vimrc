@@ -96,7 +96,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim', { 'for' : ['javascript', 'html', 'css', 'scss', 'less']  }
 Plug 'mileszs/ack.vim'
-" Plug 'rking/ag.vim'
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plug 'scrooloose/nerdtree', { 'on':  ['NERDTreeToggle', 'NERDTreeFind']  }
 Plug 'scrooloose/syntastic'
