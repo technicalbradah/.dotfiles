@@ -1,6 +1,6 @@
 " Change default mappings to space key instead of enter
-map <SPACE> <Plug>(wildfire-fuel)
-vmap <SPACE> <Plug>(wildfire-fuel)
+" map <SPACE> <Plug>(wildfire-fuel)
+" vmap <SPACE> <Plug>(wildfire-fuel)
 
 "Add tag select for html and xml files
 let g:wildfire_objects = {
