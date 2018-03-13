@@ -57,4 +57,4 @@ source ~/.shell_prompt.sh
 source ~/.bash_aliases
 export PATH=$PATH:~/bin
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.config/fzf/zsh.config ] && source ~/.config/fzf/zsh.config
