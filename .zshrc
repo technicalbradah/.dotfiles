@@ -58,3 +58,6 @@ source ~/.bash_aliases
 export PATH=$PATH:~/bin
 
 [ -f ~/.config/fzf/zsh.config ] && source ~/.config/fzf/zsh.config
+
+# Use vim to man
+export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
