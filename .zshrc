@@ -26,9 +26,9 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 export KEYTIMEOUT=1
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=10000
-SAVEHIST=10000
+# Keep 20000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=20000
+SAVEHIST=20000
 HISTFILE=~/.zsh_history
 
 # Use modern completion system
