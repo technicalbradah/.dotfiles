@@ -4,7 +4,7 @@ autoload -Uz promptinit
 promptinit
 prompt adam1
 
-setopt histignorealldups sharehistory
+setopt sharehistory appendhistory incappendhistory histignoredups histignorespace
 
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
