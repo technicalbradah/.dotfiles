@@ -98,6 +98,24 @@ let g:dutyl_stdImportPaths=['/usr/include/dmd']
 " Set filetype for diet templates
 autocmd BufNewFile,BufReadPost *.dt set filetype=pug
 
+""" Ensure default dirs exist
+
+set undofile
+set backupdir =$LOCALAPPDATA/$VIM_IMPL/backup/
+set directory =$LOCALAPPDATA/$VIM_IMPL/swp/
+set undodir   =$LOCALAPPDATA/$VIM_IMPL/undo/
+
+" Create missing folders
+if !isdirectory(expand(&backupdir))
+    call mkdir(expand(&backupdir), "p")
+endif
+if !isdirectory(expand(&undodir))
+    call mkdir(expand(&undodir), "p")
+endif
+if !isdirectory(expand(&directory))
+    call mkdir(expand(&directory), "p")
+endif
+
 " Colorscheme customization
 if g:tomorrow_customize ==? 'gruvbox-terminator'
     "Custom highlighting for Tomorrow colorscheme
