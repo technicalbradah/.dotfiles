@@ -170,4 +170,8 @@ hi VertSplit term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 
 hi StatusLineNC ctermfg=67 ctermbg=67 gui=reverse guifg=#efefef guibg=#4d4d4c
 
 " Quickly change buffers
-nmap <SPACE> ;bn<cr>
+nnoremap <Space> :bn<cr>
+
+" Use this for paging because my tmux prefix is <c-f>
+nnoremap <C-Space> <PageDown>
+nmap <C-@> <C-Space>
