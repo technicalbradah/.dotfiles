@@ -1,5 +1,20 @@
 """ Initial Settings """
 
+""" Make sure env var pointing to local data directory exists
+
+if !exists("$LOCALAPPDATA")
+   :echom "LOCALAPPDATA environment variable not defined!"
+   :q!
+endif
+
+""" Which implementation are we using? """
+
+if has('nvim')
+    let $VIM_IMPL = 'nvim'
+else
+    let $VIM_IMPL = 'vim'
+endif
+
 " Default to utf-8 encoding
 scriptencoding utf-8
 set encoding=utf-8
