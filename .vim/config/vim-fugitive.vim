@@ -11,6 +11,7 @@ nnoremap <leader>dp :diffput<CR>
 vnoremap <leader>dp :diffput<CR>
 nnoremap <leader>du :diffupdate<CR>
 vnoremap <leader>du :diffupdate<CR>
+noremap <leader>sc :1wincmd c<CR>
 
 "Custom Colorscheme
 hi gitcommitUnmergedFile term=underline ctermfg=208 guifg=#f5871f " hi default link gitcommitUnmergedFile WarningMsg
