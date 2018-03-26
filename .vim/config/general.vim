@@ -98,6 +98,22 @@ let g:dutyl_stdImportPaths=['/usr/include/dmd']
 " Set filetype for diet templates
 autocmd BufNewFile,BufReadPost *.dt set filetype=pug
 
+""" Restore cusor to file position in previous edit """
+
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+
+" Tell vim to remember certain things when we exit
+"  '50  :  marks will be remembered for up to 50 previously edited files
+"  "100 :  will save up to 100 lines for each register
+"  :40  :  up to 40 lines of command-line history will be remembered
+"  %    :  saves and restores the buffer list
+"  n... :  where to save the viminfo files
+
+set viminfo='50,\"100,:40,%,n$LOCALAPPDATA/$VIM_IMPL/viminfo
+
 """ Ensure default dirs exist
 
 set undofile
