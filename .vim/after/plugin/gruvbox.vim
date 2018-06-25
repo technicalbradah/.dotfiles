@@ -17,4 +17,7 @@ if g:colors_name == "gruvbox" && &background == "light"
 
     " Vim-notes plugin highlighting
     hi Title term=bold cterm=bold ctermfg=9 gui=bold guifg=Magenta
+
+    " Change visual mode highlighting to something more pleasant
+    hi Visual cterm=NONE term=NONE ctermbg=252 guibg=#d6d6d6
 endif
