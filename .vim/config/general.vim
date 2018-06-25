@@ -126,38 +126,6 @@ if !isdirectory(expand(&directory))
     call mkdir(expand(&directory), "p")
 endif
 
-" Colorscheme customization
-if g:tomorrow_customize ==? 'gruvbox-terminator'
-    "Custom highlighting for Tomorrow colorscheme
-    "modifies the scheme to use some colors from gruvbox scheme
-    hi Keyword    ctermfg=91
-    hi SignColumn term=bold cterm=bold ctermfg=253 ctermbg=7 gui=bold guifg=#f8f8f0 guibg=#465457
-    hi Normal ctermfg=237 ctermbg=229
-    hi FoldColumn ctermfg=10 ctermbg=223 guifg=DarkBlue guibg=Grey
-    hi Folded term=bold,underline cterm=bold,underline ctermfg=10 ctermbg=223 guifg=DarkBlue guibg=LightGrey
-    hi LineNr ctermfg=12 ctermbg=223 guifg=Brown
-    hi CursorColumn ctermbg=223 guibg=Grey90
-    hi CursorLine ctermbg=223 guibg=Grey90
-
-    " Vim-notes plugin highlighting
-    hi Title term=bold cterm=bold ctermfg=9 gui=bold guifg=Magenta
-elseif g:tomorrow_customize ==? 'solarized'
-    "Custom highlighting for Tomorrow colorscheme
-    "modifies the scheme to use some colors from solarized scheme
-    hi Keyword    ctermfg=91
-    hi SignColumn term=bold cterm=bold ctermfg=253 ctermbg=7 gui=bold guifg=#f8f8f0 guibg=#465457
-    hi Normal ctermfg=10 ctermbg=15
-    hi FoldColumn ctermfg=10 ctermbg=7 guifg=DarkBlue guibg=Grey
-    hi Folded term=bold,underline cterm=bold,underline ctermfg=10 ctermbg=7 guifg=DarkBlue guibg=LightGrey
-"    hi LineNr term=underline ctermfg=25 ctermbg=7 guifg=Brown
-    hi LineNr ctermfg=12 ctermbg=7 guifg=Brown
-    hi CursorColumn ctermbg=7 guibg=Grey90
-    hi CursorLine ctermbg=7 guibg=Grey90
-
-    " Vim-notes plugin highlighting
-    hi Title term=bold cterm=bold ctermfg=9 gui=bold guifg=Magenta
-endif
-
 " Customize split windows look/feel
 set fillchars=vert:\ ,fold:-
 hi VertSplit term=bold cterm=bold ctermfg=253 ctermbg=67 gui=bold guifg=#f8f8f0 guibg=#465457
