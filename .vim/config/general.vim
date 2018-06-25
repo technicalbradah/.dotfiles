@@ -105,14 +105,8 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 
-" Tell vim to remember certain things when we exit
-"  '50  :  marks will be remembered for up to 50 previously edited files
-"  "100 :  will save up to 100 lines for each register
-"  :40  :  up to 40 lines of command-line history will be remembered
-"  %    :  saves and restores the buffer list
-"  n... :  where to save the viminfo files
-
-set viminfo='50,\"100,:40,%,n$LOCALAPPDATA/$VIM_IMPL/viminfo
+" :help 'viminfo'
+let &viminfo="'50,<100,:100,%,n".g:localappdata.'/'.g:vim_impl.'/viminfo'
 
 """ Ensure default dirs exist
 
