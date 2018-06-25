@@ -132,5 +132,6 @@ hi VertSplit term=bold cterm=bold ctermfg=251 ctermbg=67 gui=bold guifg=#f8f8f0 
 hi StatusLineNC ctermfg=67 ctermbg=67 gui=reverse guifg=#efefef guibg=#4d4d4c
 
 " Use this for paging because my tmux prefix is <c-f>
-nnoremap <C-Space> <PageDown>
+nnoremap <C-Space> <PageUp>
 nmap <C-@> <C-Space>
+nnoremap <Space> <PageDown>
