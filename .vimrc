@@ -140,6 +140,7 @@ Plug 'kiith-sa/DSnips', { 'do' : 'curl -sfLo ~/.vim/UltiSnips/d.snippets --creat
 Plug 'Shougo/vimproc' | Plug 'idanarye/vim-vebugger', { 'for' : 'd'  }
 Plug 'digitaltoad/vim-pug', { 'for' : 'pug' }
 
+Plug 'morhetz/gruvbox'
 """ End of Plugs list """
 
 call plug#end()
@@ -221,7 +222,7 @@ highlight SpecialKey guifg=#4a4a59
 """ Tomorrow Night Color Scheme """
 
 set background=light
-let g:tomorrow_customize="gruvbox-terminator"
+colorscheme gruvbox
 colorscheme Tomorrow
 
 
