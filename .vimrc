@@ -141,6 +141,7 @@ Plug 'Shougo/vimproc' | Plug 'idanarye/vim-vebugger', { 'for' : 'd'  }
 Plug 'digitaltoad/vim-pug', { 'for' : 'pug' }
 
 Plug 'morhetz/gruvbox'
+Plug 'ryanoasis/vim-devicons'
 """ End of Plugs list """
 
 call plug#end()
