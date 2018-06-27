@@ -5,7 +5,8 @@ let g:notes_directories = ['~/Documents/Notes']
 let g:notes_suffix = '.txt'
 
 " An attempt to make URLs stand out
-highlight def link notesRealURL Underlined
+hi def link notesRealURL Underlined
+hi Title term=bold cterm=bold ctermfg=9 gui=bold guifg=Magenta
 
 " Short cuts to speed up note taking
 nmap <2-LeftMouse>  gf
@@ -21,3 +22,6 @@ autocmd Filetype notes nmap <leader>f gf
 autocmd Filetype notes nmap <leader>u ggj3Wgf
 autocmd Filetype notes nmap <leader>w ;w<CR>
 autocmd Filetype notes nmap <leader>o gf
+
+" Vim-notes plugin highlighting
+hi Title term=bold cterm=bold ctermfg=9 gui=bold guifg=Magenta
