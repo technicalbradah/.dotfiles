@@ -111,9 +111,9 @@ let &viminfo="'50,<100,:100,%,n".g:localappdata.'/'.g:vim_impl.'/viminfo'
 """ Ensure default dirs exist
 
 set undofile
-set backupdir =$LOCALAPPDATA/$VIM_IMPL/backup/
-set directory =$LOCALAPPDATA/$VIM_IMPL/swp/
-set undodir   =$LOCALAPPDATA/$VIM_IMPL/undo/
+let &backupdir = g:localappdata . '/' . $VIM_IMPL . '/backup/'
+let &directory = g:localappdata . '/' . $VIM_IMPL . '/swp/'
+let &undodir   = g:localappdata . '/' . $VIM_IMPL . '/undo/'
 
 " Create missing folders
 if !isdirectory(expand(&backupdir))

@@ -3,16 +3,17 @@
 """ Make sure env var pointing to local data directory exists
 
 if !exists("$LOCALAPPDATA")
-   :echom "LOCALAPPDATA environment variable not defined!"
-   :q!
+    let g:localappdata = $HOME.'/.appdata'
+else
+    let g:localappdata = $LOCALAPPDATA
 endif
 
 """ Which implementation are we using? """
 
 if has('nvim')
-    let $VIM_IMPL = 'nvim'
+    let g:vim_impl = 'nvim'
 else
-    let $VIM_IMPL = 'vim'
+    let g:vim_impl = 'vim'
 endif
 
 " Default to utf-8 encoding
