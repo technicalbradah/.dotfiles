@@ -143,6 +143,8 @@ Plug 'digitaltoad/vim-pug', { 'for' : 'pug' }
 
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 """ End of Plugs list """
 
 call plug#end()
