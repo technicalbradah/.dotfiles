@@ -184,22 +184,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Exiting, logging off, suspending, etc.
-
-mode "offramp" {
-        # Escape hatch
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-
-        # Logout
-        bindsym l exec $nsid i3-msg exit, mode "default"
-        bindsym r exec $nsid dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Reboot" boolean:true
-        bindsym Shift+s exec $nsid dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop, mode "default"
-        # Poweroff
-}
-
-bindsym $mod+x mode "offramp"
-
 # Mode for opening/running apps
 
 mode "run" {
@@ -313,3 +297,23 @@ exec $nsid xautolock -detectsleep -time 5 -locker "/usr/local/bin/scrock.sh"
 
 # Disable system beep
 exec_always $nsid xset -b
+
+
+#### Da new new
+
+# Set shut down, restart and locking features
+set $offramp (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+bindsym $mod+x mode "$offramp"
+mode "$offramp" {
+    bindsym l exec $nsid i3exit lock, mode "default"
+    bindsym s exec $nsid i3exit suspend, mode "default"
+    bindsym u exec $nsid i3exit switch_user, mode "default"
+    bindsym e exec $nsid i3exit logout, mode "default"
+    bindsym h exec $nsid i3exit hibernate, mode "default"
+    bindsym r exec $nsid i3exit reboot, mode "default"
+    bindsym Shift+s exec $nsid i3exit shutdown, mode "default"
+
+    # Escape hatch
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
