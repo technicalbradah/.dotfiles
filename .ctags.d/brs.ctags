@@ -6,6 +6,6 @@
 --kinddef-BrightScript=f,function,functions
 --kinddef-BrightScript=s,sub,subs
 --kinddef-BrightScript=v,variable,variables
---regex-BrightScript=/^Function[ \t ]*([a-zA-Z0-9_]+)/\1/f/i
---regex-BrightScript=/^sub[ \t ]*([a-zA-Z0-9_]+)/\1/s/i
---regex-BrightScript=/^[ \t ]*(\w+) ?=/\1/v/
+--regex-BrightScript=/^function[ \t]+([a-zA-Z0-9_]+)/\1/f/i
+--regex-BrightScript=/^sub[ \t]+([a-zA-Z0-9_]+)/\1/s/i
+--regex-BrightScript=/^[ \t]*([a-zA-Z0-9_]+) ?=/\1/v/
