@@ -135,3 +135,6 @@ hi DiffAdd ctermbg=157 " lightgreen
 hi DiffChange ctermbg=222 " lightorange
 hi DiffDelete ctermbg=224 " lightred/pink
 hi DiffText ctermbg=228
+
+"Better integration with system clipboard via xclip
+set clipboard+=unnamedplus
