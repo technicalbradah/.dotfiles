@@ -125,3 +125,13 @@ hi StatusLine ctermfg=67 ctermbg=67
 nnoremap <C-Space> <PageUp>
 nmap <C-@> <C-Space>
 nnoremap <Space> <PageDown>
+
+"Sane diff colors
+hi clear DiffAdd
+hi clear DiffChange
+hi clear DiffDelete
+hi clear DiffText
+hi DiffAdd ctermbg=157 " lightgreen
+hi DiffChange ctermbg=222 " lightorange
+hi DiffDelete ctermbg=224 " lightred/pink
+hi DiffText ctermbg=228
