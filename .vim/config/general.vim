@@ -7,18 +7,6 @@ let g:netrw_browsex_viewer= "gnome-open"
 " Generic toggles
 
 " Toggle folds
-nmap <leader>fo zA
-
-" Ease window navigation
-"nnoremap <c-h> <c-w>h
-"nnoremap <c-j> <c-w>j
-"nnoremap <c-k> <c-w>k
-"nnoremap <c-l> <c-w>l
-
-"nmap <c-h> <c-w>h
-"nmap <c-j> <c-w>j
-"nmap <c-k> <c-w>k
-"nmap <c-l> <c-w>l
 
 " Custom fold text line based on
 " http://vim.wikia.com/wiki/Customize_text_for_closed_folds
