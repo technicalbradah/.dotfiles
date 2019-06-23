@@ -81,10 +81,9 @@ Xft.autohint:   0
 !!                        xft:Fira Mono for Powerline:style=Regular:size=14, \
 !!                        xft:DejaVu Sans Mono:style=Book:antialias=true:size=13
 
-URxvt*font:  xft:Roboto Mono for Powerline:style=Regular:antialias=true:size=13, \
-            xft:Hack
-!!URxvt*font:  xft:RobotoMono Nerd Font:size=15, \
-!!            xft:Hack
+URxvt*font:  xft:Monaco for Powerline:style=Medium:size=18, xft:FuraMono NF:size=18, xft:DejaVu Sans Mono:size=18, xft:DejaVu Sans:size=18, xft:DejaVu Math TeX Gyre:size=18, xft:FontAwesome:size=18
+!!URxvt*font:  xft:Monaco for Powerline:style=Medium:size=18, xft:Fira Code Medium:style=Medium:size=18, xft:Inconsolata Nerd Font Mono:size=18, xft:DejaVu Sans Mono:size=18, xft:devicons:size=18
+URxvt.depth: 32
 
 !! URxvt*font:           xft:M+ 1m for Powerline:style=Regular:size=12
 
