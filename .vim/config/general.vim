@@ -138,3 +138,6 @@ hi DiffText ctermbg=228
 
 "Better integration with system clipboard via xclip
 set clipboard+=unnamedplus
+
+" Minimize spacing around line number column
+set nuw=1
