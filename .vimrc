@@ -100,6 +100,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chase/vim-ansible-yaml', { 'for' : ['yaml']  }
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+" if has('nvim')
+"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   Plug 'Shougo/deoplete.nvim'
+"   Plug 'roxma/nvim-yarp'
+"   Plug 'roxma/vim-hug-neovim-rpc'
+" endif
 Plug 'ervandew/supertab'
 "Plug 'farseer90718/vim-taskwarrior'
 Plug 'blindFS/vim-taskwarrior', { 'on': ['TW'] }
@@ -144,6 +152,7 @@ Plug 'digitaltoad/vim-pug', { 'for' : 'pug' }
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ludovicchabant/vim-gutentags'
+" Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 """ End of Plugs list """
 
