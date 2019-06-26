@@ -71,7 +71,7 @@ syn keyword brsConst Invalid
 
 syn keyword brsTodo contained	TODO
 
-syn keyword brsMethods isListItemSelected isScreenClosed isListFocused isListSelected isListItemFocused isButtonPressed isPlaybackPosition isRemoteKeyPressed isRequestSucceeded isRequestFailed isRequestInterrupted isStatusMessage isPaused isResumed isCleared isPartialResult isFullResult isAdSelected isStorageDeviceInserted isStorageDeviceRemoved isStreamStarted GetType GetIndex GetMessage GetData GetInfo
+syn keyword brsMethods isListItemSelected setMessagePort isScreenClosed isListFocused isListSelected isListItemFocused isButtonPressed isPlaybackPosition isRemoteKeyPressed isRequestSucceeded isRequestFailed isRequestInterrupted isStatusMessage isPaused isResumed isCleared isPartialResult isFullResult isAdSelected isStorageDeviceInserted isStorageDeviceRemoved isStreamStarted GetType GetIndex GetMessage GetData GetInfo CreateScene
 
 " syn keyword brsStatement
 " syn keyword brsKeyword As
