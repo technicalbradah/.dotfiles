@@ -13,7 +13,8 @@ if g:colors_name == "gruvbox" && &background == "light"
     hi FoldColumn ctermfg=10 ctermbg=223 guifg=DarkBlue guibg=Grey
     " hi Folded term=bold,underline cterm=bold,underline ctermfg=10 ctermbg=223 guifg=DarkBlue guibg=LightGrey
     " hi Folded term=bold cterm=bold ctermfg=66 ctermbg=223 guifg=DarkBlue guibg=LightGrey
-    hi Folded  cterm=bold,standout,italic,reverse ctermfg=66 ctermbg=223
+    " hi Folded  cterm=bold,standout,italic,reverse ctermfg=66 ctermbg=223
+    hi Folded ctermfg=244 ctermbg=223 guifg=#928374 guibg=#ebdbb2 cterm=italic,bold
     hi LineNr ctermfg=12 ctermbg=223 guifg=Brown
     hi CursorColumn ctermbg=223 guibg=Grey90
     hi CursorLine ctermbg=223 guibg=Grey90
