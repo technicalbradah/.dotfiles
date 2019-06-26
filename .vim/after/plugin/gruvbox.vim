@@ -27,5 +27,8 @@ if g:colors_name == "gruvbox" && &background == "light"
 
     " Perl syntax highlighting is hideous
     hi perlSubName cterm=bold ctermfg=22 guifg=#427b58
+    hi! link perlSubName GruvboxAqua
+
+    hi Comment cterm=italic ctermfg=248
 
 endif
