@@ -156,9 +156,15 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 """ End of Plugs list """
 
+"Denite
+Plug 'Shougo/denite.nvim'
+Plug 'Shougo/neomru.vim'
+let g:neomru#file_mru_limit=100
+
+Plug 'raghur/fruzzy', { 'do': { -> fruzzy#install()} }
+let g:fruzzy#usenative = 1
+let g:fruzzy#sortonempty = 0
 call plug#end()
-
-
 
 """ Leader Mappings [ALL]    """
 
