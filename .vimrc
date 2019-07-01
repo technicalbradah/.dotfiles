@@ -88,6 +88,7 @@ call plug#begin('~/.vim/plugged')
 
 "Plug 'edkolev/promptline.vim'
 "Plug 'edkolev/tmuxline.vim'
+Plug 'w0rp/ale'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny'  }
 Plug 'pgilad/vim-skeletons'
 Plug 'sukima/xmledit', { 'for' : ['xml']  }
